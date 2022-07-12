@@ -73,8 +73,8 @@ figure {
 figure img {
     margin-bottom: -4px;
     width: 100%;
-    object-fit: cover;
-    object-position: 0 -150px;
+    /* object-fit: cover;
+    object-position: 0 -150px; */
 }
 
 figcaption {
