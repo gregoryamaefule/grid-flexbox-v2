@@ -38,21 +38,118 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    overflow: hidden;
 }
 
 section h2 {
     font-size: 2.5rem;
+    position: relative;
+    left: 10vw;
 }
+section ul{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2%;
+    list-style-type: none;
+}
+li{
+    
+    flex-basis: 32%;
+    /* border: 1px solid black; */
+    padding: 0;
 
+}
+figure{
+    /* border: 1px solid black; */
+    margin: 0;
+    margin-bottom: 0.5em;
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+}
+figure img{
+    margin-bottom: -4px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+figcaption{
+    border: 1px solid black;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+    padding: 1em;
+    border: none;
+}
+ul>li>figure{
+    border-radius: 6px;
+}
+ul>li>figure>figcaption>a{
+    font-size: 1.785rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+ul>li:nth-child(2)>figure{
+    border: 10px solid #001219;
+}
+ul>li:nth-child(2)>figure a:hover{
+    color: #001219;
+}
+ul>li:first-child>figure{
+    border: 10px solid #ca6702;
+}
+ul>li:first-child>figure a:hover{
+    color:#ca6702;
+}
+ul>li:nth-child(3)>figure{
+    border: 10px solid #ee9800;
+}
+ul>li:nth-child(3)>figure a:hover{
+    color: #ee9800;
+}
+ul>li:nth-child(4)>figure{
+    border: 10px solid #bb3e03;
+}
+ul>li:nth-child(4)>figure a:hover{
+    color: #bb3e03;
+}
+ul>li:nth-child(5)>figure{
+    border: 10px solid #94d28d;
+}
+ul>li:nth-child(5)>figure a:hover{
+    color: #94d28d;
+}
+ul>li:nth-child(6)>figure{
+    border: 10px solid #3d9397;
+}
+ul>li:nth-child(6)>figure a:hover{
+    color: #3d9397;
+}
 
 /* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
 
 
 /* At this breakpoint, transition to 2 figures per line */
 
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    li{
+        flex-basis: 49%;
+    }
+}
 
 
 /* At this breakpoint, transition to 3 figures per line */
 
-@media (min-width: 800px) {}
+@media (min-width: 800px) {
+    li{
+        flex-basis: 32%;
+    }
+}
+@media (max-width: 550px) {
+    li{
+        flex-basis: 100%;
+    }
+}

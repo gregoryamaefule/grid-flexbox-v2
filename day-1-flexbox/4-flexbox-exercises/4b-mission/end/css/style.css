@@ -152,7 +152,6 @@ figcaption a {
     display: block;
 }
 
-
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
 @media (min-width: 550px) {

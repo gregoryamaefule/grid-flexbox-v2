@@ -104,8 +104,7 @@ figcaption a {
 
 /* style is doing double duty, styling border color and hover color. Only one declaration usually applies though.  */
 
-.color2,
-.color2 a:hover {
+.color2,.color2 a:hover {
     border-color: var(--color2);
     color: var(--color2);
 }
