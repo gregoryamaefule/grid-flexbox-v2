@@ -200,6 +200,36 @@ footer address {
     margin-top: 2rem;
     font-weight: bold;
 }
+.header{
+    background-color: var(--color5);
+    max-width: none;
+    padding: 0 4vw;
+}
+.header header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 3.0em 0;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+button{
+     border: none;
+     background-color: inherit;
+     font-size: 1.2em;
+     opacity: 60%;
+     font-weight: 100;
+}
+.target1{
+    order: 1;
+}
+.target2{
+    order: 0;
+}
+.target3{
+    order: 2;
+}
+
 
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
@@ -247,5 +277,72 @@ footer address {
     }
     address {
         flex-basis: 65.5%;
+    }
+}
+@media (max-width:780px){
+    .header header{
+        max-width: 400px;
+        padding: 2.0em 0;
+    }
+    .target1{
+        order:0;
+        flex-basis: 100%;
+        overflow: hidden;
+    }
+    .target2{
+        order:1;
+        flex-basis: 50%;
+        text-align: center;
+        padding: 3px 4px;
+        margin-top: 1em;
+    }
+    .target3{
+        flex-basis: 50%;
+        text-align: center;
+        padding: 3px 4px;
+        margin-top: 1em;
+    }
+    .headerLogo{
+        text-align: center;
+    }
+    .headerLogo>img{
+        width: 85%;
+    }
+}
+
+@media (max-width:550px){
+    .target2{
+        flex-basis: 100%;
+        display: flex;
+        gap: 1.5%;
+        margin-top: 0;
+    }
+    .target3{
+        flex-basis: 100%;
+        display: flex;
+        gap: 1.5%;
+        margin-top: 0;
+    }
+    button{
+        justify-content: space-between;
+        flex-basis: 50%;
+        margin: 1px 0;
+        border-radius: 4px;
+        color: white;
+        background-color: #9b2226;
+        padding: 0.5em 0;
+        opacity: 1;
+    }
+    .header header{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1.0em 0;
+        /* margin: 0 auto; */
+        /* max-width: 400px; */
+    }
+    .header{
+        background-color: var(--color5);
+        max-width: none;
+        /* padding: 0 1vw; */
     }
 }
