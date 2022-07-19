@@ -298,6 +298,22 @@ footer address {
     margin-top: 2rem;
     font-weight: bold;
 }
+.popDiv figure:first-child{
+    border-color: var(--color7);
+}
+.popDiv figure:nth-child(2){
+    border-color: var(--color8);
+}
+.popDiv figure:nth-child(3){
+    border-color: var(--color4);
+}
+.popular{
+    background-color: var(--color2);
+    padding: 0.3rem 0 3rem 0 ;
+}
+.popular h2{
+    color: white;
+}
 
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
@@ -308,6 +324,18 @@ footer address {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+    }
+    .popDiv{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2%;
+        justify-content: space-between;
+    }
+    .popDiv figure{
+        flex-basis: 49%;
+    }
+    .popDiv figure:nth-child(3){
+        flex-basis: 100%;
     }
     section li,
     .social,
@@ -364,6 +392,12 @@ footer address {
     section li,
     .social {
         flex-basis: 32.5%;
+    }
+    .popDiv figure{
+        flex-basis: 32%;
+    }
+    .popDiv figure:nth-child(3){
+        flex-basis: 32%;
     }
     address {
         flex-basis: 65.5%;

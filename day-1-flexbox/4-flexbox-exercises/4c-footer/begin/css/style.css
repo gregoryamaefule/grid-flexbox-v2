@@ -86,6 +86,22 @@ figcaption {
     margin: 0;
     padding: 0;
 }
+.heroSection{
+    background-color: var(--color7);
+    margin: 0 auto;
+    text-align: center;
+}
+.heroSection picture>source{
+    max-width: 100%;
+    max-height: 454px;
+}
+.heroSection picture>img{
+    max-width: 100%;
+    max-height: 454px;
+}
+#featured figure{
+    max-height: 800px;
+}
 
 
 /* make the a have a big clickable area with display: block - the link occupies its containing element, the figcaption */
@@ -95,6 +111,22 @@ figcaption a {
     padding: 1rem;
     text-decoration: none;
     color: var(--color1);
+}
+.popDiv figure:first-child{
+    border-color: var(--color7);
+}
+.popDiv figure:nth-child(2){
+    border-color: var(--color8);
+}
+.popDiv figure:nth-child(3){
+    border-color: var(--color4);
+}
+.popular{
+    background-color: var(--color2);
+    padding: 0.3rem 0 3rem 0 ;
+}
+.popular h2{
+    color: white;
 }
 
 
@@ -223,6 +255,18 @@ button{
     section h2 {
         margin-left: 50px;
     }
+    .popDiv{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2%;
+        justify-content: space-between;
+    }
+    .popDiv figure{
+        flex-basis: 49%;
+    }
+    .popDiv figure:nth-child(3){
+        flex-basis: 100%;
+    }
     section ul {
         display: flex;
         flex-flow: row wrap;
@@ -263,6 +307,12 @@ button{
     }
     section li {
         flex-basis: 32.5%;
+    }
+    .popDiv figure{
+        flex-basis: 32%;
+    }
+    .popDiv figure:nth-child(3){
+        flex-basis: 32%;
     }
     
     footer address{

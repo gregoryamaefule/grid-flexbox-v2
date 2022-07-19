@@ -121,6 +121,23 @@ nav a:hover {
     color: var(--color5);
 }
 
+.heroSection{
+    background-color: var(--color7);
+    margin: 0 auto;
+    text-align: center;
+}
+.heroSection picture>source{
+    max-width: 100%;
+    max-height: 454px;
+}
+.heroSection picture>img{
+    max-width: 100%;
+    max-height: 454px;
+}
+#featured figure{
+    max-height: 800px;
+}
+
 
 /* To keep mobile screens from being stupid long, consider setting a max height on the images and hide the overflow. 
 
@@ -272,7 +289,14 @@ footer address {
     font-weight: bold;
 }
 
-
+@media (max-width: 550px){
+    figure img {
+        margin-bottom: -4px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+}
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
 @media (min-width: 550px) {
